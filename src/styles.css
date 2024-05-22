@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+20&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lugrasimo&family=Sedan:ital@0;1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Sedan", serif;
+}
+.App{
+    text-align: center;
+}
