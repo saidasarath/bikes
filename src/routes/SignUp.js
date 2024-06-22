@@ -8,13 +8,8 @@ function SignUp (){
         <>
         
         <Navbar/>
-        <Hero
-        cname="hero-mid"
-        heroimg={rr}
-        title="SignUp"
-        />
+        
         <SignUpForm/>
-        <Footer1/>
         </>
     )
 }

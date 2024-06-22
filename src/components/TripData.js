@@ -1,5 +1,5 @@
 import "../styles/trip.css"
-
+import { Link } from "react-router-dom";
 function TripData(props){
     return(
         <div className="t-card">
@@ -9,7 +9,7 @@ function TripData(props){
             </div>
             <h4>{props.heading}</h4>
             <p>{props.text}</p>
-            <div className="t-card1"><a href="/" className="show">Explore</a></div>
+            <div className="t-card1"><Link to={`/productpage/${props.id}`} className="show">Explore</Link></div>
         </div>
     );
 }

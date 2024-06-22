@@ -1,0 +1,205 @@
+.single-product-main-content {
+    margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .single-product-main-content {
+        margin: 75px 0;
+    }
+}
+
+.layout {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        max-width: 1200px;
+    }
+}
+
+  .single-product-page {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .single-product-page {
+        flex-direction: row;
+    }
+}
+
+ .left {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+ .left {
+        width: 600px;
+        height: 200px;
+    }
+}
+
+.left img {
+    width: 100%;
+    display: block;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+   .right {
+        padding: 0 35px;
+    }
+}
+
+.name {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .name {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.price {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #6b6b6b;
+}
+
+@media (min-width: 768px) {
+    .desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.cart-buttons {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+     .cart-buttons {
+        margin-top: 30px;
+    }
+}
+
+.quantity-buttons {
+    width: fit-content;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    height: 50px;
+}
+
+ .quantity-buttons span {
+    font-size: 18px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #6b6b6b;
+}
+
+.quantity-buttons span:nth-child(1) {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.quantity-buttons span:nth-child(2) {
+    width: 60px;
+}
+
+.quantity-buttons span:nth-child(3) {
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-button {
+    outline: 0;
+    border: 0;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #030006;
+    color: white;
+    font-size: 16px;
+    border-bottom: 3px ;
+    flex-grow: 1;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.add-to-cart-button:hover{
+    background-color:rgba(213, 14, 14, 0.667);
+    color: white;
+    transform: scale(1.05);
+
+}
+@media (min-width: 768px) {
+  .add-to-cart-button {
+        flex-grow: unset;
+    }
+}
+
+.divider {
+    margin: 20px;
+    height: 3px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-bold {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+
+ .text-bold:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.text-bold span {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #6b6b6b;
+}
+
+.text-bold svg {
+    margin: 0 5px;
+    transition: all ease-in-out;
+}
+
+.text-bold svg:hover {
+    transform: scale(1.5);
+    animation: 0.2s;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;  /* Customize dot size */
+    color: #000000;  /* Customize color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000000;  /* Active dot color */
+}

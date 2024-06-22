@@ -7,6 +7,7 @@ import Service from'./routes/Service'
 import {Route,Routes} from "react-router-dom";
 import SignUp from './routes/SignUp.js'
 import SignIn from './routes/SignIn.js'
+import Product from './components/Product.js'
 function App() {
   return (
     <div className='app'>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact"element={<Contact/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/login" element={<SignIn/>}/>
+        <Route path='/productpage/:id' element={<Product/>}/>
       </Routes>
   
    </div>

@@ -6,13 +6,15 @@ import ar from"../assets/8.jpg"
 const SignIn=()=>{
     return(
         <>
-        <NavBar/>
-        <Hero
+             <NavBar/>
+        <>
+       
+        {/* <Hero
         cname="hero-mid"
-        heroimg={ar}
-        title="SignIn"/>
+        heroimg={ar}> */}
         <SigninForm/>
-        <Footer1/>
+        {/* <Footer1/> */}
+        </>
         </>
     )
 }
