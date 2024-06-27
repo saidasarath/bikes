@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/product.css";
-
+import Footer1 from '../components/Footer1'
 const Product = () => {
     const { id } = useParams();
     const product = bikesData.find(bike => bike.id === parseInt(id));
@@ -52,6 +52,10 @@ const Product = () => {
                     </div>
                 </div>
             </div>
+            <div className='footer-product'>
+            <Footer1/>
+            </div>
+            
         </div>
     );
 };
